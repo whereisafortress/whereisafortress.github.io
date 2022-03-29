@@ -6,5 +6,5 @@ function calculateСoordinates() {
   let second_direction = 0.0;
   
   let fortress_cords = [0, 0];
-  
+  // help
 }
