@@ -3,6 +3,9 @@ function getTanFromDegrees(degrees) {
 }
 
 function calculateСoordinates(ax, az, bx, bz, da, db) {
+  da = da + 90;
+  db = db + 90;
+  
   let fx = 0;
   let fz = 0;
   
