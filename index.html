@@ -4,12 +4,12 @@
   </head>
   <body>
     <form id="mainform">
-      "Type here first point coordinates, X:" <input type="text" name="ax">"  Z: "<input type="text" name="az"><br>
-      "Type here second point coordinates, X:" <input type="text" name="bx">"  Z: "<input type="text" name="bz"><br>
-      "Type here first point direction: "<input type="text" name="da"><br>
-      "Type here second point direction: "<input type="text" name="db"><br>
+      <div class="notestext">Type here first point coordinates, X: </div><input type="text" class="valinput" name="ax"><div class="notestext">  Z: </div><input type="text" class="valinput" name="az"><br>
+      <div class="notestext">"Type here second point coordinates, X: </div><input type="text" class="valinput" name="bx"><div class="notestext">  Z: </div><input type="text" class="valinput" name="bz"><br>
+      <div class="notestext">"Type here first point direction: </div><input type="text" class="valinput" name="da"><br>
+      <div class="notestext">"Type here second point direction: </div><input type="text" class="valinput" name="db"><br>
     </form>
-    <input type="button" text="Calculate!" onclick="calculate()">
+    <button class="button" onclick="calculate()">Calculate!</button>
     <script src="/fortresscalculator.js"></script>
   </body>
 </html>
