@@ -19,5 +19,13 @@ function calculateСoordinates(ax, az, bx, bz, da, db) {
 }
 
 function calculate() {
+  let ax = parseInt(document.getElementById('ax').value);
+  let az = parseInt(document.getElementById('az').value);
+  let bx = parseInt(document.getElementById('bx').value);
+  let bz = parseInt(document.getElementById('bz').value);
+  let da = parseInt(document.getElementById('da').value);
+  let db = parseInt(document.getElementById('db').value);
+  
+  document.getElementById('result').innerHTML = '<h3>' + calculateСoordinates(ax, az, bx, bz, da, db) + '</h3>';
   return;
 }
