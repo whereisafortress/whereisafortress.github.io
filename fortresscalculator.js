@@ -26,6 +26,8 @@ function calculate() {
   let da = parseFloat(document.getElementById('da').value);
   let db = parseFloat(document.getElementById('db').value);
   
-  document.getElementById('result').innerHTML = '<h3>' + calculateСoordinates(ax, az, bx, bz, da, db) + '</h3>';
+  let fc = calculateСoordinates(ax, az, bx, bz, da, db);
+  
+  document.getElementById('result').innerHTML = '<h3>Fortress coordinates - X: ' + Math.round(fc[0]) + ', Z: ' + Math.round(fc[1]) + '</h3>';
   return;
 }
