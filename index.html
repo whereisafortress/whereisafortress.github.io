@@ -4,12 +4,13 @@
   </head>
   <body>
     <form id="mainform">
-      <div class="notestext">Type here first point coordinates, X: </div><input type="text" class="valinput" name="ax"><div class="notestext">  Z: </div><input type="text" class="valinput" name="az"><br>
-      <div class="notestext">"Type here second point coordinates, X: </div><input type="text" class="valinput" name="bx"><div class="notestext">  Z: </div><input type="text" class="valinput" name="bz"><br>
-      <div class="notestext">"Type here first point direction: </div><input type="text" class="valinput" name="da"><br>
-      <div class="notestext">"Type here second point direction: </div><input type="text" class="valinput" name="db"><br>
+      <div class="notestext">Type here first point coordinates, X: </div><input type="text" class="valinput" id="ax"><div class="notestext">  Z: </div><input type="text" class="valinput" id="az"><br>
+      <div class="notestext">"Type here second point coordinates, X: </div><input type="text" class="valinput" id="bx"><div class="notestext">  Z: </div><input type="text" class="valinput" id="bz"><br>
+      <div class="notestext">"Type here first point direction: </div><input type="text" class="valinput" id="da"><br>
+      <div class="notestext">"Type here second point direction: </div><input type="text" class="valinput" id="db"><br>
     </form>
-    <button class="button" onclick="calculate()">Calculate!</button>
+    <button class="button" onclick="calculate()">Calculate!</button><br>
+    <p id="result"></p>
     <script src="/fortresscalculator.js"></script>
   </body>
 </html>
